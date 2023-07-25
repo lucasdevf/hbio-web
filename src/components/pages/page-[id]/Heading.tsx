@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/Button'
-import { ButtonText } from '@/components/ui/ButtonText'
-import { Archive } from 'phosphor-react'
+import { ToArchive } from './ToArchive'
 
 export function Heading() {
   return (
@@ -8,7 +7,7 @@ export function Heading() {
       <h1 className="text-2xl font-medium">Personalizar página</h1>
 
       <div className="flex items-center space-x-10">
-        <ButtonText icon={Archive} text="Arquivar página" />
+        <ToArchive />
 
         <Button text="Editar link" />
       </div>
