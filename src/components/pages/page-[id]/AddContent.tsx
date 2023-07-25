@@ -3,6 +3,7 @@ import * as Dialog from '@radix-ui/react-dialog'
 import { X } from 'phosphor-react'
 import { useState } from 'react'
 import { AddButton } from './AddButton'
+import { AddImage } from './AddImage'
 import { AddLink } from './AddLink'
 import { AddText } from './AddText'
 import { SelectType } from './SelectType'
@@ -44,6 +45,10 @@ export function AddContent() {
 
           {typeSelected === 'Link' && (
             <AddLink onGoBack={handleClearTypeSelected} />
+          )}
+
+          {typeSelected === 'Imagem' && (
+            <AddImage onGoBack={handleClearTypeSelected} />
           )}
         </Dialog.Content>
       </Dialog.Portal>
